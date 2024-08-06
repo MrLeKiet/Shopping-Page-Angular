@@ -1,0 +1,7 @@
+<div id="container">
+  <div id="profile-image">
+    @if (this.authService.currentUser) {
+      <img src="{{this.authService.currentUser.photoURL}}" alt="Profile"/>
+    }
+  </div>
+</div>

@@ -1,0 +1,108 @@
+#container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+}
+
+.container {
+  width: 1366px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9px;
+}
+
+#container-logo {
+}
+
+#img-logo {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
+
+#img-logo > img {
+  padding: 34px 15px;
+}
+
+#navbar-nav-left {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+}
+
+#navbar-content-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#navbar-content-left > p {
+  font-size: 14px;
+  padding: 40px 10px;
+  font-weight: 600;
+  color: #666;
+}
+
+#navbar-nav-right {
+  display: flex;
+  height: 100%;
+  width: fit-content;
+}
+
+#navbar-content-right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#navbar-content-right > p {
+  font-size: 14px;
+  padding: 40px 10px;
+  font-weight: 600;
+  color: #666;
+}
+
+#navbar-content-account {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+#account-content-top > p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #666;
+}
+
+#account-content-bottom > p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+#img-account > span {
+  font-size: 40px;
+  padding-right: 5px;
+  color: #666;
+}
+
+#img-account > img {
+  width: 40px;
+  padding-right: 5px;
+  border-radius: 50%;
+}
+
+p {
+  margin: 0;
+  font-family: gotham ssm a, gotham ssm b, helvetica neue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+p:hover {
+  color: #ffffff;
+  cursor: pointer;
+}

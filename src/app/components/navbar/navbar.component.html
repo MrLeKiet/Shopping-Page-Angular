@@ -1,0 +1,38 @@
+<div id="container">
+  <div class="container">
+    <div id="navbar-nav-left">
+      <!--      <div id="container-logo">-->
+      <!--        <div id="img-logo">-->
+      <!--          <img src="https://www.zotac.com/sites/all/themes/bartik/images/logo_v1.svg" alt="logo">-->
+      <!--        </div>-->
+      <!--      </div>-->
+      <div id="navbar-content-left">
+        <p [routerLink]="['/home']">Home</p>
+      </div>
+      <div id="navbar-content-left">
+        <p [routerLink]="['/products']">Graphics cards</p>
+      </div>
+    </div>
+    <div id="navbar-nav-right">
+      <div id="navbar-content-right">
+        <p [routerLink]="['/cart']">Cart</p>
+      </div>
+      <div id="navbar-content-account">
+        <div id="img-account">
+          <span *ngIf="!authService.currentUser" class="material-symbols-outlined">person</span>
+          <img *ngIf="authService.currentUser" [src]="authService.currentUser.photoURL" alt="User Image">
+        </div>
+        <div id="account-content">
+          <div id="account-content-top">
+            <p (click)="authService.currentUser ? authService.logout() : authService.login()">
+              {{ authService.currentUser ? 'Logout' : 'Login' }}
+            </p>
+          </div>
+          <div id="account-content-bottom">
+            <p>Account</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

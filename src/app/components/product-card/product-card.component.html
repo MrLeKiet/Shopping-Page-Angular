@@ -1,0 +1,35 @@
+<!--Tại Product Card Component-->
+<div id="container">
+  <div class="product-card">
+    <div class="product-card-container">
+      <div id="img-container">
+        <div id="img-scale">
+          <img src="{{ this.product.imageUrl }}" alt="hinh anh cua tam anh">
+        </div>
+      </div>
+      <div class="txt">
+        <div id="name">
+          <p>{{ this.product.name }}</p>
+        </div>
+        <div id="description">
+          <p>{{ this.product.description }}</p>
+        </div>
+        <div id="product-detail">
+          <div id="price">
+            <p>Price: {{ this.product.price }}</p>
+          </div>
+          <div id="in-stock">
+            <p>Stock: {{ this.product.inStock }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--        <button (click)="storeService.addToCart({-->
+    <!--          id: this.product.id,-->
+    <!--          name: this.product.name,-->
+    <!--          price: this.product.price,-->
+    <!--          quantity: 1-->
+    <!--        })">Them vao gio-->
+    <!--        </button>-->
+  </div>
+</div>

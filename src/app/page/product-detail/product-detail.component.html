@@ -1,0 +1,36 @@
+<div id="container">
+  <div id="container-content">
+    <div id="header">
+      <p>Graphic card / {{ this.detailProduct.name }}</p>
+    </div>
+    <div id="product-detail">
+      <div id="img">
+        <img [src]="this.detailProduct.imageUrl" alt="product-image"/>
+      </div>
+      <div class="txt">
+        <div id="name">
+          <p>{{ this.detailProduct.name }}</p>
+        </div>
+        <div id="description">
+          <p>{{ this.detailProduct.description }}</p>
+        </div>
+        <div id="product">
+          <div id="price">
+            <p>Price: {{ this.detailProduct.price }}</p>
+          </div>
+          <div id="in-stock">
+            <p>Stock: {{ this.detailProduct.inStock }}</p>
+          </div>
+        </div>
+        <div>
+          <button (click)="storeService.addToCart({
+          id: this.detailProduct.id,
+          name: this.detailProduct.name,
+          price: this.detailProduct.price,
+          quantity: 1
+        })">Add to Cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

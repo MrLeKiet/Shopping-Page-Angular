@@ -1,0 +1,42 @@
+#container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#container-content {
+  width: 1366px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#header {
+  padding: 0 10px;
+}
+
+#product-detail {
+  display: flex;
+  background-color: #ffffff;
+}
+
+.txt {
+  padding-top: 5px;
+}
+
+#name > p {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+img {
+  width: 653px;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
