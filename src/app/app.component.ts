@@ -6,11 +6,12 @@ import {NavbarComponent} from "./components/navbar/navbar.component";
 import {TopBannerComponent} from "./components/top-banner/top-banner.component";
 import {ProductCardComponent} from "./components/product-card/product-card.component";
 import {ListProductComponent} from "./page/list-product/list-product.component";
+import {HomeComponent} from "./page/home/home.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, ProductCardComponent, ListProductComponent, TopBannerComponent],
+  imports: [RouterOutlet, NavbarComponent, ProductCardComponent, ListProductComponent, TopBannerComponent, HomeComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
