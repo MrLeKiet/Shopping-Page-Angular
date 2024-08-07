@@ -23,12 +23,7 @@
           </div>
         </div>
         <div>
-          <button (click)="storeService.addToCart({
-          id: this.detailProduct.id,
-          name: this.detailProduct.name,
-          price: this.detailProduct.price,
-          quantity: 1
-        })">Add to Cart
+          <button (click)="addToCart()">Add to Cart
           </button>
         </div>
       </div>

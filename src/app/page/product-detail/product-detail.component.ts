@@ -19,4 +19,8 @@ export class ProductDetailComponent {
     this.detailProduct = this.storeService.products.find(product => product.id == parseInt(id)) as ProductModel;
     console.log(this.detailProduct)
   }
+
+  addToCart() {
+    this.storeService.addToCart(this.detailProduct);
+  }
 }

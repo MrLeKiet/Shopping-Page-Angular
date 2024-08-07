@@ -78,6 +78,9 @@ export class StoreService {
     },
   ];
 
+  private cartSubject = new BehaviorSubject<ProductModel[]>([]);
+  cart$ = this.cartSubject.asObservable();
+
   addToCart(item: any) {
     let index = this.cart.findIndex(
       (product: ProductModel) => product.id == item.id);
@@ -93,5 +96,7 @@ export class StoreService {
       this.cart.push(item);
       this.products[indexProduct].inStock--;
     }
+    this.cartSubject.next(this.cart);
   }
+
 }

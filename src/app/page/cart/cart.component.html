@@ -1,33 +1,28 @@
-<!--&lt;!&ndash; src/app/page/cart/cart.component.html &ndash;&gt;-->
-<!--<div id="container">-->
-<!--  <div id="container-content">-->
-<!--    <div id="header">-->
-<!--      <p>Graphic card / {{ cart.length }} items</p>-->
-<!--    </div>-->
-<!--    <div id="product-detail" *ngFor="let product of cart">-->
-<!--      <div id="img">-->
-<!--        <img [src]="product.imageUrl" alt="product-image"/>-->
-<!--      </div>-->
-<!--      <div class="txt">-->
-<!--        <div id="name">-->
-<!--          <p>{{ product.name }}</p>-->
-<!--        </div>-->
-<!--        <div id="description">-->
-<!--          <p>{{ product.description }}</p>-->
-<!--        </div>-->
-<!--        <div id="product">-->
-<!--          <div id="price">-->
-<!--            <p>Price: {{ product.price }}</p>-->
-<!--          </div>-->
-<!--          <div id="in-stock">-->
-<!--            <p>Stock: {{ product.inStock }}</p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div>-->
-<!--      <p>Total Price: {{ totalPrice }}</p>-->
-<!--      <p>Total Quantity: {{ totalQuantity }}</p>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
+<div id="container">
+  <div id="container-content">
+    <div id="header">
+      <p>Graphic card / {{ cart.length }} items</p>
+    </div>
+    <div id="product-detail" *ngFor="let product of cart">
+      <div id="img">
+        <img [src]="product.imageUrl" alt="product-image"/>
+      </div>
+      <div class="txt">
+        <div id="name">
+          <p>{{ product.name }}</p>
+        </div>
+        <div id="description">
+          <p>{{ product.description }}</p>
+        </div>
+        <div id="product">
+          <div id="price">
+            <p>Price: {{ product.price }}</p>
+          </div>
+          <div id="in-stock">
+            <p>Stock: {{ product.inStock }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
