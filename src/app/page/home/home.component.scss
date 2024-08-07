@@ -12,16 +12,20 @@
   flex-direction: column;
 }
 
-#header-container {
+#header-set {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-#header {
+#header-container {
   width: 1366px;
+  display: flex;
+}
+
+#header {
+  width: 100%;
   padding: 0 10px;
-  justify-content: center;
 }
 
 #banner {
@@ -29,3 +33,4 @@
   justify-content: center;
   background-color: black;
 }
+
