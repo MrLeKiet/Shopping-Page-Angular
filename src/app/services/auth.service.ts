@@ -1,13 +1,14 @@
 import {Injectable} from '@angular/core';
 import {Auth} from "@angular/fire/auth";
 import {GoogleAuthProvider, signInWithPopup} from "@angular/fire/auth";
+import {StoreService} from "./store.service";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private auth: Auth) {
+  constructor(private storeService: StoreService, private auth: Auth) {
   }
 
   currentUser!: any;
@@ -17,6 +18,7 @@ export class AuthService {
     new GoogleAuthProvider();
     // console.log(credential.user);
     this.currentUser = credential.user;
+    this.storeService.setLoggedIn(true);
   }
 
   async logout() {

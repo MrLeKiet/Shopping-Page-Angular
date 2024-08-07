@@ -23,4 +23,13 @@ export class CartComponent implements OnInit {
       this.cart = cart;
     });
   }
+
+  addToCart(product: ProductModel) {
+    this.storeService.addToCart(product);
+  }
+
+  displayAmount(product: ProductModel): number {
+    const cartItem = this.cart.find(item => item.id === product.id);
+    return cartItem ? cartItem.quantity : 0;
+  }
 }
